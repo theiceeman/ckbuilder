@@ -1,5 +1,8 @@
 # Activity Log – Week 1
-
+## Name 
+okorie Ebube
+ ## Week Ending 
+ 3/20/2026
 ## 1. Environment Setup
 - Initialized a new workspace for CKB development.
 - Prepared to build a CKB transfer dApp using the CCC SDK.
