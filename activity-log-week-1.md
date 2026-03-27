@@ -3,7 +3,7 @@
 okorie Ebube
  ## Week Ending 
  3/20/2026
-## 1. Environment Setup
+## 1. Environment Setupe
 - Initialized a new workspace for CKB development.
 - Prepared to build a CKB transfer dApp using the CCC SDK.
 - Verified the workspace structure and ensured the .github/copilot-instructions.md file exists for project guidance.
