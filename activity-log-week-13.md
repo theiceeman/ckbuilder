@@ -10,12 +10,12 @@ Week 13 delivered two major platform features that together form a complete **me
 ### 1. AI Shop Builder
 
 #### What It Does
-Merchants can create a branded e-commerce website hosted on a subdomain (`{businessname}.yourdomain.com`) without writing a single line of code. An AI agent guides them through setup conversationally and remembers everything about their shop across sessions.
+Merchants can create a branded e-commerce website hosted on a subdomain (`{businessname}.yourdomain.com) without writing a single line of code. An AI agent guides them through setup conversationally and remembers everything about their shop across sessions.
 
 #### Endpoints Built
 
 | Endpoint | Method | Description |
-|---|---|---|
+
 | `/user/shop` | `POST` | Create a shop (sets subdomain, currency, business name) |
 | `/user/shop` | `PUT` | Update shop (e.g. publish: `{ "status": "published" }`) |
 | `/user/shop/ai/chat` | `POST` | Send message to AI agent — auto-applies theme changes |
