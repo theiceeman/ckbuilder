@@ -3,7 +3,6 @@
 ## Summary
 Week 14 focused on stabilization and hardening of two major platform features introduced in Week 13: **API Key Generation** and the **AI Shop Builder**. Both features were completed but contained edge-case bugs and environment-specific issues that surfaced during initial testing. This week resolved all known bugs, validated cross-environment behavior (TEST vs LIVE), and began backend hosting preparations for community rollout.
 
----
 
 
 
@@ -16,7 +15,7 @@ Week 14 focused on stabilization and hardening of two major platform features in
 - **Environment toggle lag:** Switching `current_environment` with `PUT /api/user/settings/general` did not clear in-memory key caches, causing the wrong active key pair to be used for subsequent webhook signing and payment calls.
 
 ### Fixes Applied
-- Introduced explicit `environment: 'TEST' | 'LIVE'` check in every key-related DB query.
+- Introduced explicit environment: 'TEST' | 'LIVE'` check in every key-related DB query.
 - Ensured `secret_key_hash` is computed at ingestion time and all lookups use `bcrypt/crypto` comparison — raw key is never logged or returned after initial creation.
 - Replaced plain `===` comparison in `verifySecretKey` with `crypto.timingSafeEqual` style buffer comparison.
 - Added cache invalidation hook inside the environment-switch mutation so active secret/public key references update immediately.
