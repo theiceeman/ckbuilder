@@ -171,3 +171,5 @@ The project has `noUnusedLocals` and `noUnusedParameters` enabled. The following
 After applying all fixes:
 - Run `yarn run build` locally to ensure zero TypeScript errors.
 - Push to Vercel and confirm the `yarn run build` step succeeds.
+
+(End of file - total 173 lines)
